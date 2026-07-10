@@ -86,3 +86,44 @@ footer{
 .btn:hover{
     background:#f57c00;
 }
+.menu-btn{
+    display:none;
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    font-size:24px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#menu{
+    display:flex;
+    gap:20px;
+}
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    align-items:center;
+}
+
+.menu-btn{
+    display:block;
+    margin-top:15px;
+}
+
+#menu{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    margin-top:15px;
+}
+
+#menu a{
+    padding:12px;
+    border-top:1px solid rgba(255,255,255,0.2);
+}
+                              }
